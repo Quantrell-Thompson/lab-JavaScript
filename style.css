@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+table,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* ==============
+      Задание1
+=================== */
+.zad1 {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid black;
+}
+.task_zad1 {
+  text-align: center;
+  font-weight: 600;
+}
+.answer_block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+/* ==============
+      Задание2
+=================== */
+
+.zad2 {
+  width: 80%;
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.field_zad2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ==============
+      Задание3
+=================== */
+.zad3 {
+  width: 80%;
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ==============
+      Задание4
+=================== */
+.zad4 {
+  width: 80%;
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ==============
+      Задание5
+=================== */
+.zad5 {
+  width: 80%;
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ==============
+      Задание6
+=================== */
+.zad6 {
+  width: 80%;
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.zad6_container {
+  display: flex;
+  border: 1px solid black;
+}
+.zad6_item {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: green;
+  border: 1px solid black;
+}
+.active {
+  background-color: red;
+}
+
+/* ==============
+      Задание7
+=================== */
+.zad7 {
+  width: 80%;
+  height: 300px;
+  margin-top: 10px;
+  border: 1px solid black;
+  position: relative;
+  padding: 10px;
+}
+.run_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}

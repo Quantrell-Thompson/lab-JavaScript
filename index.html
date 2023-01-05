@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JS</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="zad1">
+        <h3 class="title">Задание 1</h3>
+        <div class="task_zad1"></div>
+        <div class="answer_block">
+          <div>
+            <input
+              name="radioButton"
+              class="radioButton"
+              id="radioButton1"
+              type="radio"
+            />
+            <label id="labelRadioButton"></label>
+          </div>
+          <div>
+            <input
+              name="radioButton"
+              class="radioButton"
+              id="radioButton2"
+              type="radio"
+            />
+            <label id="labelRadioButton"></label>
+          </div>
+          <div>
+            <input
+              name="radioButton"
+              class="radioButton"
+              id="radioButton3"
+              type="radio"
+            />
+            <label id="labelRadioButton"></label>
+          </div>
+          <div>
+            <input
+              name="radioButton"
+              class="radioButton"
+              id="radioButton4"
+              type="radio"
+            />
+            <label id="labelRadioButton"></label>
+          </div>
+          <button id="next_question_zad1" onclick="nextQuestion()">
+            Наступне завдання
+          </button>
+          <button onclick="finishZad1()">Финиш тест</button>
+        </div>
+      </div>
+      <div class="zad2">
+        <h3 class="title">Задание 2</h3>
+        <span class="result_zad2"></span>
+        <div class="field_zad2">
+          <span class="task_zad2">2 * 3 = </span>
+          <input class="field_answer_zad2" type="text" />
+          <button onclick="getCurrentAnswer()">Перевірити</button>
+        </div>
+        <button class="but_next_question_zad2" onclick="next_question_zad2()">
+          Наступне завдання
+        </button>
+        <span class="current_answer_zad2"></span>
+      </div>
+      <div class="zad3">
+        <h3 class="title">Задание 3</h3>
+        <div>
+          <input id="checkbox_zad3" type="checkbox" value="uk" /> Ukraine
+        </div>
+        <div>
+          <input id="checkbox_zad3" type="checkbox" value="en" /> English
+        </div>
+        <div>
+          <input id="checkbox_zad3" type="checkbox" value="spa" /> Spanish
+        </div>
+        <span class="active_checkbox_zad3"></span>
+        <button onclick="clickZad3()">ОК</button>
+      </div>
+      <div class="zad4">
+        <h3 class="title">Задание 4</h3>
+        <div>
+          <input
+            id="checkbox_zad4"
+            type="checkbox"
+            value="gladiaht@gmail.com"
+          />
+          gladiaht@gmail.com
+        </div>
+        <div>
+          <input
+            id="checkbox_zad4"
+            type="checkbox"
+            value="nobbiland@gmail.com"
+          />
+          nobbiland@gmail.com
+        </div>
+        <div>
+          <input
+            id="checkbox_zad4"
+            type="checkbox"
+            value="kbk221_gtv@student.ztu.edu.ua"
+          />
+          kbk221_gtv@student.ztu.edu.ua
+        </div>
+        <span class="active_checkbox_zad4"></span>
+      </div>
+      <div class="zad5">
+        <h3 class="title">Задание 5</h3>
+        <table>
+          <tr>
+            <td>Січень</td>
+            <td><input class="input_table_zad5" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Лютий</td>
+            <td><input class="input_table_zad5" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Березень</td>
+            <td><input class="input_table_zad5" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Квітень</td>
+            <td><input class="input_table_zad5" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Травень</td>
+            <td><input class="input_table_zad5" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Червень</td>
+            <td><input class="input_table_zad5" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Липень</td>
+            <td><input class="input_table_zad5" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Серпень</td>
+            <td><input class="input_table_zad5" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Вересень</td>
+            <td><input class="input_table_zad5" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Жовтень</td>
+            <td><input class="input_table_zad5" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Листопад</td>
+            <td><input class="input_table_zad5" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Грудень</td>
+            <td><input class="input_table_zad5" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Сума</td>
+            <td class="statistic_suma"></td>
+          </tr>
+          <tr>
+            <td>Середнє</td>
+            <td class="statistic_sered"></td>
+          </tr>
+          <tr>
+            <td>Мінімальне</td>
+            <td class="statistic_min"></td>
+          </tr>
+          <tr>
+            <td>Максимальне</td>
+            <td class="statistic_max"></td>
+          </tr>
+        </table>
+        <button onclick="calculate()">Обчислити</button>
+      </div>
+      <div class="zad6">
+        <h3 class="title">Задание 6</h3>
+        <div>
+          <span>Кількість рядів: </span><input class="zad6_row" type="text" />
+          <span>Кількість стовпчиків: </span
+          ><input class="zad6_col" type="text" />
+        </div>
+        <button onclick="createTable()">Намалювати</button>
+        <div class="zad6_container"></div>
+      </div>
+      <div class="zad7">
+        <h3 class="title">Задание 7</h3>
+        <button class="run_button">Кнопочка :3</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
